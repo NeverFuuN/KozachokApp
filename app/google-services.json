@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "198767169176",
+    "project_id": "kozachokapp",
+    "storage_bucket": "kozachokapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198767169176:android:e4e866fedb0b601296caed",
+        "android_client_info": {
+          "package_name": "com.example.kozachokapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198767169176-lev98ne6u56dtok2c2tb3u6uj41v2bh3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBViVrxjvJFPh6evxMqfqU8NNvR0tDwrRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198767169176-lev98ne6u56dtok2c2tb3u6uj41v2bh3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

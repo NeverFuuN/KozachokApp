@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFood">
+
+    <TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#FFFFFF"
+    android:elevation="4dp"
+    android:textSize="24sp"
+    android:gravity="center"
+    android:text="Оформление заказа"
+    android:textStyle="bold|italic"
+        android:textColor="@color/black"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcHorizontalType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:itemCount="1"
+        android:elevation="10dp"
+        tools:listitem="@layout/items_horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcItemList"
+        tools:listitem="@layout/item_position"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCrateOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rcHorizontalType" />
+
+    <Button
+        android:id="@+id/btnCrateOrder"
+        android:layout_margin="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Создать заказ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

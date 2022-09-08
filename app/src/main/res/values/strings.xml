@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KozachokApp</string>
+    <string name="name_order"><b>Заказ: </b> </string>
+    <string name="name_food"><b>Заказ: </b> </string>
+    <string name="name_weight"><b>Заказ: </b> </string>
+    <string name="name_price"><b>Заказ: </b> </string>
+    <string name="name_count"><b>Заказ: </b> </string>
+</resources>

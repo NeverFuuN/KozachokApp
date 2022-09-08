@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="185dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:elevation="15dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/nameOfItemsMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Салат Цезарь "
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Вес:"
+            android:layout_marginEnd="4dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txtVes"
+            app:layout_constraintTop_toBottomOf="@+id/nameOfItemsMenu" />
+
+        <TextView
+            android:id="@+id/txtVes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="1250"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="г"
+            app:layout_constraintBottom_toBottomOf="@+id/txtVes"
+            app:layout_constraintStart_toEndOf="@+id/txtVes"
+            app:layout_constraintTop_toTopOf="@+id/txtVes" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Цена:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtPrice"
+            app:layout_constraintEnd_toStartOf="@+id/txtPrice"
+            app:layout_constraintTop_toTopOf="@+id/txtPrice" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            app:layout_constraintBottom_toBottomOf="@+id/txtGrn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtGrn" />
+
+        <TextView
+            android:id="@+id/txtGrn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:text="грн"
+            app:layout_constraintStart_toEndOf="@+id/txtPrice"
+            app:layout_constraintTop_toBottomOf="@id/txtVes" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintEnd_toEndOf="@+id/nameOfItemsMenu"
+            app:layout_constraintStart_toStartOf="@+id/nameOfItemsMenu"
+            app:layout_constraintTop_toBottomOf="@+id/txtPrice">
+
+            <Button
+                android:id="@+id/btnAddPosition"
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Добавить"/>
+
+            <TextView
+                android:id="@+id/itemCounter"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="28sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnRemoveCount"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="4dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_baseline_remove_24"
+                app:layout_constraintBottom_toBottomOf="@+id/itemCounter"
+                app:layout_constraintEnd_toStartOf="@+id/itemCounter"
+                app:layout_constraintTop_toTopOf="@+id/itemCounter" />
+
+            <ImageButton
+                android:id="@+id/btnAddCount"
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="4dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_baseline_add_24"
+                app:layout_constraintBottom_toBottomOf="@+id/itemCounter"
+                app:layout_constraintStart_toEndOf="@+id/itemCounter"
+                app:layout_constraintTop_toTopOf="@+id/itemCounter" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
